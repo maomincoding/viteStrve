@@ -1,16 +1,15 @@
-import { createView } from 'strvejs';
+import { Strve } from 'strvejs';
 import data from './data';
 import App from './App';
 import methods from './methods';
 
 // init
 function init(_app) {
-  createView({
-    el: "#app",
+  Strve("#app", {
     template: _app ? _app.default : App,
     data: data
   });
-  // The event is handled after the createview API
+  // The event is handled after the Strve API
   methods();
 }
 

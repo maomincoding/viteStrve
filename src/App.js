@@ -1,8 +1,8 @@
-import { template } from "strvejs"
+import { render } from "strvejs"
 import helloTemplate from './template/helloTemplate';
 import './style/index.css';
 
-const App = template`
+const App = render`
 <div class="content">
     ${helloTemplate}
     <button class="color-red">点击111</button>
