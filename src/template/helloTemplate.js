@@ -5,6 +5,6 @@ import './helloTemplate.css';
 export default render`
 <div class="container">
   <img src="${logo}"/>
-  <h1>Hello Strview.js</h1>
+  <h1>Hello Strve.js</h1>
 </div>
 `;

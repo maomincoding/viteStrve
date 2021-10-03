@@ -4,7 +4,7 @@ export default {
     b: 34990,
     name: "maomin",
     age: 9,
-    msg: 'Strview',
+    msg: 'Strve',
     arr: ['0'],
     obj: {
         a: {
