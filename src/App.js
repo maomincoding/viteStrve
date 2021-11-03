@@ -6,6 +6,7 @@ function App() {
         <div class='inner'>
             ${home()}
             ${list()}
+            <p>1</p>
         </div>
     `;
 }
