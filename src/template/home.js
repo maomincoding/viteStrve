@@ -11,7 +11,7 @@ function home() {
             <h1>Hello Strve.js</h1>
             <button id='btn1'>add</button>
             <p>{f1state.obj.a}</p>
-            <input value="${f1state.obj.a}"/>
+            <input value="${f1state.obj.a}" class="int"/>
         </div>
     </div>
 `;

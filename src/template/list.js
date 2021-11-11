@@ -2,7 +2,7 @@ import { render } from 'strvejs';
 import '../style/list.css';
 
 const listState = {
-  arr: ['1', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2'],
+  arr: ['1', '2'],
 };
 
 function list() {
