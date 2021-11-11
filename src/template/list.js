@@ -8,7 +8,7 @@ const listState = {
 function list() {
   return render`
     <div class='list'>
-        <button id='btn2'>push</button>
+        <button id='btn2'>Push</button>
         <ul class="list-inner">
             ${listState.arr.map((todo) => render`<li key=${todo}>${todo}</li>`)}
         </ul>

@@ -7,9 +7,9 @@ function home() {
   return render`
     <div class='home'>
         <img src="${logo}" class="logo"/>
+        <h1>Hello Strve.js</h1>
         <div>
-            <h1>Hello Strve.js</h1>
-            <button id='btn1'>add</button>
+            <button id='btn1'>Add</button>
             <p>{f1state.obj.a}</p>
             <input value="${f1state.obj.a}" class="int"/>
         </div>
