@@ -1,7 +1,7 @@
 import { render } from 'strvejs';
 import { home, list } from './template/index.js';
 
-function App() {
+function template() {
   return render`
         <div class='inner'>
             ${home()}
@@ -10,4 +10,4 @@ function App() {
     `;
 }
 
-export { App };
+export default template;

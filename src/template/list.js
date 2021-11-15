@@ -1,9 +1,6 @@
 import { render } from 'strvejs';
+import { listState } from '../state/list.js';
 import '../style/list.css';
-
-const listState = {
-  arr: ['1', '2'],
-};
 
 function list() {
   return render`
@@ -16,4 +13,4 @@ function list() {
 `;
 }
 
-export { list, listState };
+export { list };

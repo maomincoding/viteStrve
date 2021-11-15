@@ -1,6 +1,5 @@
 import { updateView } from 'strvejs';
-import { listState } from '../template/list.js';
-import { App } from '../App.js';
+import { listState } from '../state/list.js';
 
 function f2() {
   updateView(() => {
@@ -8,4 +7,4 @@ function f2() {
   });
 }
 
-export { f2, listState };
+export { f2 };

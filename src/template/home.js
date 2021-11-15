@@ -1,7 +1,7 @@
 import { render } from 'strvejs';
 import '../style/home.css';
 import logo from '../assets/logo.png';
-import { f1state } from '../ways/useAdd.js';
+import { f1state } from '../state/home.js';
 
 function home() {
   return render`

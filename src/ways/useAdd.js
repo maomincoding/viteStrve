@@ -1,10 +1,5 @@
 import { updateView } from 'strvejs';
-
-const f1state = {
-  obj: {
-    a: 1,
-  },
-};
+import { f1state } from '../state/home.js';
 
 function f1() {
   updateView(() => {
@@ -12,4 +7,4 @@ function f1() {
   });
 }
 
-export { f1, f1state };
+export { f1 };
