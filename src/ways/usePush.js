@@ -7,4 +7,10 @@ function f2() {
   });
 }
 
-export { f2 };
+function f3() {
+  updateView(() => {
+    listState.arr.splice(1, 1);
+  });
+}
+
+export { f2, f3 };

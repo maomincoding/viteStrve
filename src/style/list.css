@@ -15,4 +15,14 @@
     background-color: #C6715B;
     color: #fff;
     border-radius: 50px;
+    animation: my1 1s ease-in;
+}
+
+@keyframes my1 {
+    from {
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    }
 }
