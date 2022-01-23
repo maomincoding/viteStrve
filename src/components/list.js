@@ -8,6 +8,7 @@ export const listState = {
 
 export default function List(v) {
   return render/*html*/`
+        <button onClick=${useUnshift}>Unshift</button>
         <button onClick=${usePush}>Push</button>
         <button onClick=${useDel}>Del</button>
         <button onClick=${useEmit}>Emit</button>
@@ -25,7 +26,11 @@ function usePush() {
       listState.arr.push(count++);
     });
 }
-  
+function useUnshift(){
+  updateView(() => {
+    listState.arr.unshift(count++);
+  },'useFkey');
+}
 function useDel() {
     updateView(() => {
       listState.arr.splice(1, 1);

@@ -4,7 +4,6 @@ export default defineConfig({
   // options
   server: {
     strictPort:true,
-    port: 3001,
-    hmr: true,
+    port: 3001
   },
 });

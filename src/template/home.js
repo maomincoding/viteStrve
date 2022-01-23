@@ -17,7 +17,7 @@ export default function Home() {
   return render/*html*/`
     <div class='home'>
         <img src=${logo} class='logo'/>
-        <h1 style="${homeState.h1Style}">Hello Strve.js</h1>
+        <h1 style=${homeState.h1Style}>Hello Strve.js</h1>
         <div>
             <button onClick=${useAdd}>Add</button>
             <p>{homeState.obj.a}</p>
