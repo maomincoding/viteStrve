@@ -1,5 +1,5 @@
 import { render,updateView } from 'strvejs';
-import '../style/list.css';
+import style from  '../style/list.module.css';
 
 export const listState = {
     arr: ['1', '2'],
@@ -11,10 +11,10 @@ export default function List(v) {
     <div class='list'>
         <button onClick=${usePush}>Push</button>
         <button onClick=${useDel}>Del</button>
-        <ul class="list-inner">
-            ${listState.arr.map((todo) => render/*html*/`<li>${todo}</li>`)}
+        <ul class="${style.listInner}">
+            ${listState.arr.map((item) => render/*html*/`<li>${item}</li>`)}
         </ul>
-        <p>${v}</p>
+        <p class="${style.int}">${v}</p>
         <p>{listState.txt}</p>
     </div>
 `;
