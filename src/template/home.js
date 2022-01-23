@@ -7,24 +7,32 @@ export const homeState = {
     obj: {
       a: 1,
     },
-    txt:'txt'
+    txt:'txt',
+    h1Style:{
+      color: '#C6715B'
+  }
 };
 
 export default function Home() {
   return render/*html*/`
     <div class='home'>
         <img src=${logo} class='logo'/>
-        <h1>Hello Strve.js</h1>
+        <h1 style="${homeState.h1Style}">Hello Strve.js</h1>
         <div>
             <button onClick=${useAdd}>Add</button>
             <p>{homeState.obj.a}</p>
             <input value="${homeState.obj.a}" class="int"/>
         </div>
-        ${List(homeState.txt)}
+        <div class='list' onUseGetTit=${useGetTit}>
+          ${List(homeState.txt)}
+        </div>
     </div>
 `;
 }
 
+function useGetTit(v){
+  console.log(v.detail.tit); // "This is title."
+}
 
 function useAdd() {
   updateView(() => {

@@ -1,13 +1,8 @@
-.list {
-    text-align: center;
-}
-
 .listInner {
     width: 600px;
     margin: 20px auto;
     padding: 0;
 }
-
 .listInner li {
     list-style: none;
     padding: 20px;
