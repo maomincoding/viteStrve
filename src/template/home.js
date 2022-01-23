@@ -7,6 +7,7 @@ export const homeState = {
     obj: {
       a: 1,
     },
+    txt:'txt'
 };
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
             <p>{homeState.obj.a}</p>
             <input value="${homeState.obj.a}" class="int"/>
         </div>
-        ${List()}
+        ${List(homeState.txt)}
     </div>
 `;
 }
