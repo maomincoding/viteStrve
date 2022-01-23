@@ -1,4 +1,4 @@
-import { render } from 'strvejs';
+import { render,updateView } from 'strvejs';
 import '../style/list.css';
 
 export const listState = {

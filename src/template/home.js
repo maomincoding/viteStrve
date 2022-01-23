@@ -1,4 +1,4 @@
-import { render } from 'strvejs';
+import { render,updateView } from 'strvejs';
 import List from '../components/list';
 import '../style/home.css';
 import logo from '../assets/logo.png';
@@ -27,7 +27,7 @@ export default function Home() {
 
 
 function useAdd() {
-    updateView(() => {
+  updateView(() => {
       homeState.obj.a++;
-    });
+  });
 }
