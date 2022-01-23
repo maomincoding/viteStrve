@@ -1,13 +1,9 @@
 import { Strve } from 'strvejs';
 import template from './App.js';
-import {listState} from './components/list';
-import {f1state} from './template/home';
+import data from './state/index';
 
 Strve('#app', {
-  data:{
-    listState,
-    f1state
-  },
+  data,
   template,
 });
 

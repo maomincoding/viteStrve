@@ -1,10 +1,10 @@
 import { render } from 'strvejs';
-import {home} from './template/home';
+import Home from './template/home';
 
 function template() {
   return render/*html*/`
         <div class='inner'>
-            ${home()}
+            ${Home()}
         </div>
     `;
 }

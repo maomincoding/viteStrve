@@ -1,16 +1,15 @@
 import { render } from 'strvejs';
 import '../style/list.css';
 
-const listState = {
+export const listState = {
     arr: ['1', '2'],
   };
-  
 
-function list() {
+export default function List() {
   return render/*html*/`
     <div class='list'>
-        <button id='btn2' onClick=${f2}>Push</button>
-        <button id='btn3' onClick=${f3}>Del</button>
+        <button id='btn2' onClick=${usePush}>Push</button>
+        <button id='btn3' onClick=${useDel}>Del</button>
         <ul class="list-inner">
             ${listState.arr.map((todo) => render/*html*/`<li>${todo}</li>`)}
         </ul>
@@ -18,16 +17,14 @@ function list() {
 `;
 }
 
-function f2() {
+function usePush() {
     updateView(() => {
       listState.arr.push('3');
     });
 }
   
-function f3() {
+function useDel() {
     updateView(() => {
       listState.arr.splice(1, 1);
     });
 }
-
-export {listState,list} ;

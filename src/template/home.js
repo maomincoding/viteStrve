@@ -1,34 +1,32 @@
 import { render } from 'strvejs';
-import {list} from '../components/list';
+import List from '../components/list';
 import '../style/home.css';
 import logo from '../assets/logo.png';
 
-const f1state = {
+export const homeState = {
     obj: {
       a: 1,
     },
 };
 
-function home() {
+export default function Home() {
   return render/*html*/`
     <div class='home'>
         <img src=${logo} class='logo'/>
         <h1>Hello Strve.js</h1>
         <div>
-            <button id='btn1' onClick=${f1}>Add</button>
-            <p>{f1state.obj.a}</p>
-            <input value="${f1state.obj.a}" class="int"/>
+            <button onClick=${useAdd}>Add</button>
+            <p>{homeState.obj.a}</p>
+            <input value="${homeState.obj.a}" class="int"/>
         </div>
-        ${list()}
+        ${List()}
     </div>
 `;
 }
 
 
-function f1() {
+function useAdd() {
     updateView(() => {
-      f1state.obj.a++;
+      homeState.obj.a++;
     });
 }
-
-export {home,f1state} ;
