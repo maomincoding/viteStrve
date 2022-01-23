@@ -2,7 +2,7 @@ import { render,updateView } from 'strvejs';
 import style from  '../style/list.module.css';
 
 export const listState = {
-    arr: ['1', '2'],
+    arr: [1, 2],
     txt:'this is txt.'
   };
 
@@ -20,9 +20,10 @@ export default function List(v) {
 `;
 }
 
+let count = 3;
 function usePush() {
     updateView(() => {
-      listState.arr.push('3');
+      listState.arr.push(count++);
     });
 }
   
